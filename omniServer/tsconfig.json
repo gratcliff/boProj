@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "typeRoots": ["node_modules/@types"],
+    "baseUrl": "/src",
+    "rootDir": ".",
+    "paths": {
+      "@constants/*": [
+        "resources/constants/*"
+      ],
+      "@interfaces/*": [
+        "resources/interfaces/*"
+      ],
+      "@utils/*": [
+        "resources/utils/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/**.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

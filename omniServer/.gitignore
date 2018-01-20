@@ -1,0 +1,22 @@
+# Logs
+logs
+*.log
+.DS_Store
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+coverage
+reports
+.grunt
+build/Release
+node_modules
+
+
+#Ignore build folder
+build
+
+#Ignore typings
+typings

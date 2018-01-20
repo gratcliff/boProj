@@ -1,0 +1,44 @@
+{
+  "name": "omni_server",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Gabe Ratcliff",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "gulp build",
+    "start": "gulp build; node build/src/index.js",
+    "setup": "npm install",
+    "watch": "gulp build; nodemon --watch build/src build/src/index.js"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.91",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "fs": "0.0.1-security",
+    "hapi": "^16.1.1",
+    "hapi-async-handler": "^1.0.3",
+    "hapi-swagger": "^7.7.0",
+    "joi": "^10.5.0",
+    "lodash": "^4.17.4",
+    "nconf": "^0.10.0",
+    "nodemon": "^1.11.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "@types/hapi": "^16.1.2",
+    "@types/joi": "^10.3.2",
+    "@types/node": "^7.0.21",
+    "gulp": "^3.9.1",
+    "gulp-env": "^0.4.0",
+    "gulp-rimraf": "^0.2.1",
+    "gulp-shell": "^0.6.3",
+    "gulp-tslint": "^8.0.0",
+    "node": "0.0.0",
+    "tslint": "^5.2.0",
+    "typescript": "^2.3.2"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  }
+}
